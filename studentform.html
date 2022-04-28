@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Information</title>
+</head>
+<script src="formValid.js">
+
+</script>
+<body>
+<a href="viewstudent.jsp">View All Records</a><br/>  
+<h1>Add New Student</h1>  
+<form name="info" onsubmit="return validateForm()" action="addStudent.jsp" method="post">  
+<table>  
+<tr><td>Name:</td><td><input type="text" name="stud_name" size="40"/><div class="error" id="nameErr"></div></td></tr>  
+<tr><td>Email:</td><td><input type="email" name="stud_email" size="40"/><div class="error" id="emailErr"></div></td></tr>  
+<tr><td>Phone:</td><td><input type="text" name="stud_phone"/><div class="error" id="phoneErr"></div></td></tr>  
+<tr><td>Address:</td><td><textarea rows="5" cols="20" name="stud_address"></textarea><div class="error" id="addressErr"></div></td></tr>  
+<tr><td colspan="2"><input type="submit" value="Add Student"/></td></tr>  
+</table>  
+</form> 
+ 
+</body>
+</html>
